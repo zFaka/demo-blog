@@ -1,28 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
-//icon
-import ForwardIcon from '@material-ui/icons/Forward';
-import Brightness3Icon from '@material-ui/icons/Brightness3';
-import LabelImportantIcon from '@material-ui/icons/LabelImportant';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-import BlurOnIcon from '@material-ui/icons/BlurOn';
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
-
-//var scrollToTopBtn = document.getElementById("scrollToTopBtn")
-//var rootElement = document.documentElement
-//function scrollToTop() {
-//// Scroll to top logic
-//rootElement.scrollTo({
-//top: 0,
-//behavior: "smooth"
-//})
-//}
-//scrollToTopBtn.addEventListener("click", scrollToTop)
 
 class IndexPage extends React.Component {
   render() {
@@ -54,15 +35,17 @@ class IndexPage extends React.Component {
         <div style={{
           display:'flex', 
           justifyContent:'space-around', 
-          margin:'25px'}}>
+        }}>
+
           <Link to="/blog/">
             <Button 
-              marginTop="35%" 
+              marginTop="0 auto" 
               fontSize='25px' 
               color='black' 
               background='white'
             >
-              <ForwardIcon/><BlurOnIcon style={{color:'#ea5867'}}/>
+              IN
+              {/*<BlurOnIcon style={{color:'#ea5867'}} float='left'/>*/}
             </Button>
           </Link>
           <span role='img' aria-label="brain emoji"
@@ -80,7 +63,6 @@ class IndexPage extends React.Component {
               fontSize: "65px",
               fontWeight: "600",
               borderRadius: "90px",
-              marginTop: "10px", 
               borderColor:'black', 
               padding: "0px 20px", 
             }}>
@@ -88,12 +70,17 @@ class IndexPage extends React.Component {
           </span>
           <Link to="/proyects/">
             <Button 
-              marginTop="35%" 
               fontSize='25px' 
               color='black' 
               background='white'
+              display='block'
+              alignItems='center'
+              justifyContent='center'
             >
-              <BlurOnIcon style={{color:'#ea5867'}}/><ForwardIcon/>
+              {/*
+              <BlurOnIcon style={{color:'#ea5867'}}/>
+              */}
+              OUT
             </Button>
           </Link>
         </div>
