@@ -16,7 +16,7 @@ class Blog extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        
+
         <SEO title="All posts" />
         <Bio />
         <SearchPosts
@@ -30,7 +30,9 @@ class Blog extends React.Component {
             marginTop="85px"
             background='white'
             fontSize='35px'
-          >🔙</Button>
+          >
+            BACK
+          </Button>
         </Link>
       </Layout>
     )
