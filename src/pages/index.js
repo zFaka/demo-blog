@@ -1,6 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
+//icon
+import ForwardIcon from '@material-ui/icons/Forward';
+import Brightness3Icon from '@material-ui/icons/Brightness3';
+import LabelImportantIcon from '@material-ui/icons/LabelImportant';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import BlurOnIcon from '@material-ui/icons/BlurOn';
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
@@ -54,7 +62,7 @@ class IndexPage extends React.Component {
               color='black' 
               background='white'
             >
-              ➡]
+              <ForwardIcon/><BlurOnIcon style={{color:'#ea5867'}}/>
             </Button>
           </Link>
           <span role='img' aria-label="brain emoji"
@@ -85,7 +93,7 @@ class IndexPage extends React.Component {
               color='black' 
               background='white'
             >
-              [➡
+              <BlurOnIcon style={{color:'#ea5867'}}/><ForwardIcon/>
             </Button>
           </Link>
         </div>
