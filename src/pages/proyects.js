@@ -1,3 +1,4 @@
+
 import React from "react"
 import { Link, graphql } from "gatsby"
 
@@ -15,8 +16,7 @@ class Blog extends React.Component {
     const localSearchBlog = data.localSearchBlog
 
     return (
-      <Layout location={this.props.location}>
-        
+      <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
         <SearchPosts
@@ -26,11 +26,7 @@ class Blog extends React.Component {
           location={location}
         />
         <Link to="/">
-          <Button 
-            marginTop="85px"
-            background='white'
-            fontSize='35px'
-          >🔙</Button>
+          <Button marginTop="85px">Go Home</Button>
         </Link>
       </Layout>
     )

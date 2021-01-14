@@ -10,11 +10,11 @@ const ButtonWrapper = styled.button`
   border: none;
   text-align: center;
   box-sizing: border-box;
-  text-decoration: none;
   padding: 10px 25px;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-decoration: none;
 
   background: ${props => props.props.background || "black"};
   color: ${props => props.props.color || "rgb(255, 255, 255)"};
@@ -24,8 +24,17 @@ const ButtonWrapper = styled.button`
   margin-top: ${props => props.props.marginTop};
   margin-bottom: ${props => props.props.marginBottom};
 
+  transition:transform .13s;
+
   &:hover {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
+    transform:scale(1.133);
+    text-decoration: none;
+  }
+  &:focus{
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
+    transform:scale(.833);
+    text-decoration: none;
   }
 `
 
