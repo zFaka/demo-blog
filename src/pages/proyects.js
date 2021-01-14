@@ -30,6 +30,7 @@ class Blog extends React.Component {
             marginTop="85px" 
             background='white'
             fontSize='35px'
+            color='black'
           >Go Home</Button>
         </Link>
       </Layout>

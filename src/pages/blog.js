@@ -29,6 +29,7 @@ class Blog extends React.Component {
           <Button 
             marginTop="85px"
             background='white'
+            color='black'
             fontSize='35px'
           >
             BACK
