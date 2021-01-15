@@ -1,0 +1,10 @@
+body{
+    animation: fadein 1s ease-in;
+    font-family: Montserrat,sans-serif;
+    font-weight: 550;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

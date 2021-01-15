@@ -15,7 +15,7 @@ class Blog extends React.Component {
     const localSearchBlog = data.localSearchBlog
 
     return (
-      <Layout location={this.props.location}>
+      <Layout location={this.props.location} title={siteTitle}>
 
         <SEO title="All posts" />
         <Bio />
@@ -26,14 +26,17 @@ class Blog extends React.Component {
           location={location}
         />
         <Link to="/">
-          <Button 
-            marginTop="85px"
-            background='white'
-            color='black'
-            fontSize='35px'
+          <div 
+            style={{textAlign:'center', display:'flex', justifyContent:'center'}}
           >
-            BACK
-          </Button>
+            <Button 
+              background='white'
+              color='black'
+              fontSize='25px'
+            >
+              BCK
+            </Button>
+          </div>
         </Link>
       </Layout>
     )

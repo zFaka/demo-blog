@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
+import '../utils/styles.css';
 
 class IndexPage extends React.Component {
   render() {
@@ -20,69 +21,130 @@ class IndexPage extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         {/*<img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />*/}
+
         <h1>
-          Hey people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
+          SmplCmplx
         </h1>
-        <p>Welcome to your new Gatsby website. You are on your home page.</p>
-        <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
+
+        <p style={{marginBottom:'20px'}}>
+          IT Pro currently focused on Web development, UI and UX.  
         </p>
-        <p>Now go build something great!</p>
+        <p style={{marginBottom:'20px'}}>
+          I Work with the MERN stack, Redux, Sass, Firebase, Gatsby, Figma, CSS Grid, Flexbox, CSS Animations.
+        </p>
+        <p>
+          My learning and reflections on the following topics:
+          <div 
+            display='inline' 
+            justifyContent='center'
+            paddingTop='20px'
+            marginBottom='10px'
+          >
+            <ul style={{
+              fontWeight:'700', 
+              verticalAlign: 'top', 
+              marginTop:'10px', 
+              marginLeft:'10px'
+            }}>
+              <li
+                style={{display:'inline-block', 
+                  verticalAlign: 'top', 
+                  float:'left', 
+                  width:'40%'}}
+              >WebDev</li>
+              <li style={{display:'inline-block', 
+                verticalAlign: 'top', 
+                float:'left', 
+                width:'40%'}}
+              >WebSec</li>
+              <li style={{display:'inline-block', 
+                verticalAlign: 'top', 
+                float:'left', 
+                width:'40%'}}
+              >Health</li>
+              <li style={{display:'inline-block', 
+                verticalAlign: 'top', 
+                float:'left', 
+                width:'40%'}}
+              >Wellness</li>
+              <li style={{display:'inline-block', 
+                verticalAlign: 'top', 
+                float:'left', 
+                width:'40%'}}
+              >Finance</li>
+              <li style={{display:'inline-block', 
+                verticalAlign: 'top', 
+                width:'40%'}}
+              >Business</li>
+            </ul>
+          </div>
+        </p>
+
+        <div>
+        <p style={{marginBottom:'20px'}}>Now build your own way!</p>
+        </div>
+
+
         <div style={{
           display:'flex', 
-          justifyContent:'space-around', 
+          justifyContent:'space-around'
         }}>
 
-          <Link to="/blog/">
-            <Button 
-              marginTop="0 auto" 
-              fontSize='25px' 
-              color='black' 
-              background='white'
-            >
-              IN
-              {/*<BlurOnIcon style={{color:'#ea5867'}} float='left'/>*/}
-            </Button>
-          </Link>
-          <span role='img' aria-label="brain emoji"
-            style={{
-              display: 'block',
-              border: 'none',
-              textAlign: 'center',
-              textDecoration: 'none',
-              cursor: 'default',
-              textTransform: 'uppercase',
-              letterSpacing: '2px',
-              userSelect:'select', 
+          <div
+            width='100px'
+            height='100px'
+            display='flex-start'
+          >
+            <Link to="/blog/">
+              <Button 
+                fontSize='25px' 
+                color='black' 
+                background='white'
+              >
+                IN
+                {/*<BlurOnIcon style={{color:'#ea5867'}} float='left'/>*/}
+              </Button>
+            </Link>
+          </div>
 
-              background: "white",
-              fontSize: "65px",
-              fontWeight: "600",
-              borderRadius: "90px",
-              borderColor:'black', 
-              padding: "0px 20px", 
-            }}>
-            🧠
-          </span>
-          <Link to="/proyects/">
-            <Button 
-              fontSize='25px' 
-              color='black' 
-              background='white'
-              display='block'
-              alignItems='center'
-              justifyContent='center'
-            >
-              {/*
+          <div 
+            width='100px'
+            height='100px'
+            display='center'
+          >
+            <span role='img' aria-label="brain emoji"
+              style={{
+                textDecoration: 'none',
+                cursor: 'default',
+                userSelect:'none', 
+                background: "white",
+                fontSize: "65px",
+                fontWeight: "600",
+                borderColor:'black', 
+                padding: "0px 20px", 
+              }}>
+              🧠
+            </span>
+          </div>
+
+          <div
+            width='100px'
+            height='100px'
+            display='flex-end'
+          >
+            <Link to="/proyects/">
+              <Button 
+                fontSize='25px' 
+                color='black' 
+                background='white'
+              >
+                {/*
               <BlurOnIcon style={{color:'#ea5867'}}/>
               */}
-              OUT
-            </Button>
-          </Link>
+                OUT
+              </Button>
+            </Link>
+          </div>
         </div>
       </Layout>
     )

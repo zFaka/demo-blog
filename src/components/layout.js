@@ -72,28 +72,33 @@ class Layout extends React.Component {
         >
           <header>{header}</header>
           <main>{children}</main>
-        </div>
-        <Footer>
-          <div style={{
-          display:'flex', 
-          justifyContent:'space-around'
-          }}>
-          {/*}© {new Date().getFullYear()}, Built with
+          <Footer>
+            <div style={{
+              display:'flex', 
+              justifyContent:'space-around'
+            }}>
+              {/*}© {new Date().getFullYear()}, Built with
           {` `}*/}
+              <div>
+                <a href="https://www.github.com/zfaka">
+                  <GitHubIcon color='action' fontSize='large'/>
+                </a>
+              </div>
 
-          <a href="mailto:facundoarenas29@gmail.com">
-            <EmailIcon color='action' fontSize='large'/>
-          </a>
+              <div>
+                <a href="mailto:facundoarenas29@gmail.com">
+                  <EmailIcon color='action' fontSize='large'/>
+                </a>
+              </div>
 
-          <a href="https://www.linkedin.com/in/facundo-arenas">
-            <LinkedInIcon color='action' fontSize='large'/>
-          </a>
-
-          <a href="https://www.github.com/zfaka">
-            <GitHubIcon color='action' fontSize='large'/>
-          </a>
-          </div>
-        </Footer>
+              <div>
+                <a href="https://www.linkedin.com/in/facundo-arenas">
+                  <LinkedInIcon color='action' fontSize='large'/>
+                </a>
+              </div>
+            </div>
+          </Footer>
+        </div>
       </Wrapper>
     )
   }
